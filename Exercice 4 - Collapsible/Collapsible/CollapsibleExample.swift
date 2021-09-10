@@ -51,6 +51,7 @@ struct Collapsible<Element, Content: View>: View  {
 			ForEach(data.indices, content: { self.child(at: $0) })
 		}
 		.border(Color.orange)
+		.animation(Animation.spring())
 	}
 }
 
